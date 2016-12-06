@@ -54,9 +54,13 @@ RUN apt-get -y install libxml2-dev
 RUN R CMD javareconf
 
 # Install common R packages
-RUN R -e "install.packages(c('devtools', 'gplots', 'httr', 'igraph', 'knitr', 'methods', 'plyr', 'RColorBrewer', 'rJava', 'rjson', 'R.methodsS3', 'R.oo', 'sqldf', 'stringr', 'testthat', 'XML', 'DT', 'htmlwidgets', 'log4r', 'pryr', 'plumber', 'tibble'))"
-
-RUN R -e 'library(devtools); install_github("ramnathv/rCharts");'
+#RUN R -e "install.packages(c('devtools', 'gplots', 'httr', 'igraph', 'knitr', 'methods', 'plyr', 'RColorBrewer', 'rJava', 'rjson', 'R.methodsS3', 'R.oo', 'sqldf', 'stringr', 'testthat', 'XML', 'DT', 'htmlwidgets', 'log4r', 'pryr', 'plumber', 'tibble'))"
 
 # Install Bioconductor
-RUN R -e "source('http://bioconductor.org/biocLite.R'); biocLite(c('Biobase', 'BiocCheck', 'BiocGenerics', 'BiocStyle', 'S4Vectors', 'IRanges', 'AnnotationDbi'))"
+#RUN R -e "source('http://bioconductor.org/biocLite.R'); biocLite(c('Biobase', 'BiocCheck', 'BiocGenerics', 'BiocStyle', 'S4Vectors', 'IRanges', 'AnnotationDbi'))"
+
+COPY r-requirements.txt /
+COPY installPackages.R /
+COPY runInstallPackages.R /
+
+RUN R -e 'source("runInstallPackages.R")'
