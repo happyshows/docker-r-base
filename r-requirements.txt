@@ -62,6 +62,7 @@ openssl
 optparse
 pkgmaker
 plotly
+plumber
 plyr
 png
 proto
