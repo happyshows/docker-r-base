@@ -15,6 +15,7 @@ chron
 colorspace
 crayon
 curl
+d3heatmap
 data.table
 DBI
 dendextend
