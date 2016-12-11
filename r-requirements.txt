@@ -33,7 +33,6 @@ foreach
 formatR
 Formula
 fpc
-fpc 
 gdata
 getopt
 ggplot2
@@ -41,7 +40,6 @@ git2r
 gplots
 graph
 gridBase
-gridExtra
 gridExtra
 gsubfn
 gtable
@@ -68,12 +66,10 @@ lazyeval
 log4r
 magrittr
 mclust
-mclust
 memoise
 mime
 modeltools
 munsell
-mvtnorm
 mvtnorm
 openssl
 optparse
@@ -100,7 +96,6 @@ rjson
 RJSONIO
 rngtools
 robustbase
-robustbase
 RSQLite
 rstudioapi
 RUnit
@@ -117,7 +112,6 @@ testthat
 tibble
 tidyr
 trimcluster
-viridis
 viridis
 whisker
 withr
