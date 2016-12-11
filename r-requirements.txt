@@ -11,6 +11,7 @@ BiocInstaller
 BiocStyle
 biocViews
 bitops
+cannin/simpleRCache
 chron
 colorspace
 crayon
