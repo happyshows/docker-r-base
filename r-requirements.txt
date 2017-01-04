@@ -98,6 +98,7 @@ rjson
 RJSONIO
 rngtools
 robustbase
+roxygen2
 RSQLite
 rstudioapi
 RUnit
