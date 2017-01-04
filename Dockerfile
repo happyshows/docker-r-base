@@ -14,7 +14,7 @@ RUN add-apt-repository -y ppa:openjdk-r/ppa
 RUN apt-get -y update && apt-get -y upgrade
 
 # Install basic commands
-RUN apt-get -y install links nano htop
+RUN apt-get -y install links nano htop git
 
 ENV R_BASE_VERSION 3.3.2-1trusty0
 
