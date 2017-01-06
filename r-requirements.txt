@@ -96,6 +96,7 @@ reshape2
 rJava
 rjson
 RJSONIO
+rmarkdown
 rngtools
 robustbase
 roxygen2
