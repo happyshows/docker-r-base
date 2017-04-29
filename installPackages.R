@@ -11,12 +11,7 @@ installPackages <- function(packages) {
         install.packages(package)
       } else if(grepl("/", package)) {
         install_github(package)
-      } else {
-        # Try to install from Bioconductor
-        source("http://bioconductor.org/biocLite.R")
-        biocLite(character(), ask=FALSE)
-        biocLite(package)
-      }
+      } 
     }
   }
 }
