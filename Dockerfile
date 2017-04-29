@@ -16,7 +16,7 @@ RUN apt-get -y update && apt-get -y upgrade
 # Install basic commands
 RUN apt-get -y install links nano htop git
 
-ENV R_BASE_VERSION 3.3.2-1trusty0
+ENV R_BASE_VERSION 3.4.0
 
 # Necessary for getting a specific R version (get oldest working packages by manual date comparison) and set main repository
 #RUN apt-cache policy r-cran-matrix
